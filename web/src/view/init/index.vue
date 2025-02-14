@@ -29,12 +29,6 @@
               target="_blank"
               >官方文档</a
             >
-            <a
-              class="text-blue-600 font-bold"
-              href="https://www.bilibili.com/video/BV1kv4y1g7nT?p=2"
-              target="_blank"
-              >初始化视频</a
-            >
           </p>
           <p class="text-gray-600 dark:text-gray-300 mb-2">
             3.请您确认是否了解后续的配置流程

@@ -21,7 +21,7 @@ export default ({ mode }) => {
     }
   }
 
-  viteLogo(process.env)
+  viteLogo()
 
   const timestamp = Date.parse(new Date())
 
