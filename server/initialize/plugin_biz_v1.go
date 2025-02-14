@@ -6,6 +6,7 @@ import (
 	"github.com/flipped-aurora/gin-vue-admin/server/plugin/email"
 	"github.com/flipped-aurora/gin-vue-admin/server/plugin/flow"
 	"github.com/flipped-aurora/gin-vue-admin/server/plugin/organization"
+	systask "github.com/flipped-aurora/gin-vue-admin/server/plugin/sysTask"
 	"github.com/flipped-aurora/gin-vue-admin/server/utils/plugin"
 	"github.com/gin-gonic/gin"
 )
@@ -34,5 +35,6 @@ func bizPluginV1(group ...*gin.RouterGroup) {
 	))
 	PluginInit(private, flow.CreateFlowPlug())
 	PluginInit(public, organization.CreateOrganizationPlug())
+	PluginInit(private, systask.CreateSysTaskPlug())
 	holder(public, private)
 }

@@ -67,6 +67,12 @@
   "/src/plugin/announcement/form/info.vue": "InfoForm",
   "/src/plugin/announcement/view/info.vue": "Info",
   "/src/plugin/email/view/index.vue": "Email",
+  "/src/plugin/organization/view/dataAuthority.vue": "DataAuthority",
+  "/src/plugin/organization/view/index.vue": "Index",
+  "/src/plugin/sysTask/view/sysTask.vue": "SysTask",
+  "/src/plugin/sysTask/view/sysTaskForm.vue": "SysTaskForm",
+  "/src/plugin/sysTask/view/sysTaskLog.vue": "SysTaskLog",
+  "/src/plugin/sysTask/view/sysTaskLogForm.vue": "SysTaskLogForm"
   "/src/plugin/flow/view/components/graph.vue": "FlowGraph",
   "/src/plugin/flow/view/components/nodes/auto.vue": "AutoNode",
   "/src/plugin/flow/view/components/nodes/decision.vue": "DecisionNode",
