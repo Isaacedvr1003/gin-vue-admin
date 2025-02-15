@@ -1,3 +1,6 @@
 package opsManage
 
-type ServiceGroup struct{ OpsMattersTrackingService }
+type ServiceGroup struct {
+	OpsMattersTrackingService
+	BankWorkOrdersService
+}

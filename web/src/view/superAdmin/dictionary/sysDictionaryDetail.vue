@@ -21,17 +21,17 @@
           </template>
         </el-table-column>
 
-        <el-table-column align="left" label="展示值" prop="label" />
+        <el-table-column align="left" label="展示值" prop="label" width="180" show-overflow-tooltip/>
 
-        <el-table-column align="left" label="字典值" prop="value" />
+        <el-table-column align="left" label="字典值" prop="value" width="420" show-overflow-tooltip/>
 
-        <el-table-column align="left" label="扩展值" prop="extend" />
+        <el-table-column align="left" label="扩展值" prop="extend" width="100" show-overflow-tooltip/>
 
         <el-table-column
           align="left"
           label="启用状态"
           prop="status"
-          width="120"
+          width="80"
         >
           <template #default="scope">
             {{ formatBoolean(scope.row.status) }}
@@ -42,7 +42,7 @@
           align="left"
           label="排序标记"
           prop="sort"
-          width="120"
+          width="80"
         />
 
         <el-table-column align="left" label="操作" :min-width="appStore.operateMinWith">
