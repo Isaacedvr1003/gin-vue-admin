@@ -54,8 +54,10 @@
         @selection-change="handleSelectionChange"
         @sort-change="sortChange"
         >
-          <el-table-column sortable align="left" label="事项ID" prop="id" width="90" />
-          <el-table-column sortable align="left" label="事项简述" prop="description" width="450" show-overflow-tooltip/>
+          <el-table-column sortable align="left" label="创建时间" prop="createdAt" width="180">
+            <template #default="scope">{{ formatDate(scope.row.createdAt) }}</template>
+          </el-table-column>
+          <el-table-column sortable align="left" label="事项简述" prop="description" width="500" show-overflow-tooltip/>
         <el-table-column sortable align="left" label="事项级别" prop="priority" width="120">
             <template #default="scope">
               <el-rate v-model="scope.row.priority" :max="3" size="large" disabled/>
@@ -92,9 +94,6 @@
                 
             </template>
         </el-table-column>
-         <el-table-column sortable align="left" label="创建时间" prop="createdAt" width="180">
-            <template #default="scope">{{ formatDate(scope.row.createdAt) }}</template>
-         </el-table-column>
          <el-table-column sortable align="left" label="更新时间" prop="updatedAt" width="180">
             <template #default="scope">{{ formatDate(scope.row.updatedAt) }}</template>
          </el-table-column>
@@ -145,9 +144,6 @@
             </template>
 
           <el-form :model="formData" label-position="top" ref="elFormRef" :rules="rule" label-width="80px">
-            <el-form-item label="事项ID:"  prop="id" >
-              <el-input v-model.number="formData.id" :clearable="true" :disabled="type!=='create'" placeholder="请输入事项ID" />
-            </el-form-item>
             <el-form-item label="事项简述:"  prop="description" >
               <el-input v-model="formData.description" :clearable="true" :disabled="type!=='create'"  placeholder="请输入事项简述" />
             </el-form-item>
