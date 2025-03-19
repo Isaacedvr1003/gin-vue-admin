@@ -16,6 +16,7 @@
   "/src/view/example/breakpoint/breakpoint.vue": "BreakPoint",
   "/src/view/example/customer/customer.vue": "Customer",
   "/src/view/example/index.vue": "Example",
+  "/src/view/example/upload/scanUpload.vue": "scanUpload",
   "/src/view/example/upload/upload.vue": "Upload",
   "/src/view/init/index.vue": "Init",
   "/src/view/layout/aside/asideComponent/asyncSubmenu.vue": "AsyncSubmenu",
@@ -65,5 +66,17 @@
   "/src/view/systemTools/system/system.vue": "Config",
   "/src/plugin/announcement/form/info.vue": "InfoForm",
   "/src/plugin/announcement/view/info.vue": "Info",
-  "/src/plugin/email/view/index.vue": "Email"
+  "/src/plugin/email/view/index.vue": "Email",
+  "/src/plugin/flow/view/components/graph.vue": "FlowGraph",
+  "/src/plugin/flow/view/components/nodes/auto.vue": "AutoNode",
+  "/src/plugin/flow/view/components/nodes/decision.vue": "DecisionNode",
+  "/src/plugin/flow/view/components/nodes/end.vue": "ProgressNode",
+  "/src/plugin/flow/view/components/nodes/event.vue": "EventNode",
+  "/src/plugin/flow/view/components/nodes/merge.vue": "MergeNode",
+  "/src/plugin/flow/view/components/nodes/parallel.vue": "ParallelNode",
+  "/src/plugin/flow/view/components/nodes/start.vue": "StartNode",
+  "/src/plugin/flow/view/flow.vue": "Flow",
+  "/src/plugin/flow/view/flowSetting.vue": "FlowForm",
+  "/src/plugin/flow/view/flowTest.vue": "FlowTest",
+  "/src/plugin/flow/view/flowTestList.vue": "FlowTestList"
 }

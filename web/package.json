@@ -10,6 +10,15 @@
     "fix-memory-limit": "cross-env LIMIT=4096 increase-memory-limit"
   },
   "dependencies": {
+    "@antv/x6": "^2.18.1",
+    "@antv/x6-plugin-clipboard": "^2.1.6",
+    "@antv/x6-plugin-export": "^2.1.6",
+    "@antv/x6-plugin-history": "^2.2.4",
+    "@antv/x6-plugin-keyboard": "^2.2.3",
+    "@antv/x6-plugin-selection": "^2.2.2",
+    "@antv/x6-plugin-snapline": "^2.1.7",
+    "@antv/x6-plugin-stencil": "^2.1.5",
+    "@antv/x6-vue-shape": "^2.1.2",
     "@element-plus/icons-vue": "^2.3.1",
     "@form-create/designer": "^3.2.6",
     "@form-create/element-ui": "^3.2.10",

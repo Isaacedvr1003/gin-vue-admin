@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"github.com/flipped-aurora/gin-vue-admin/server/global"
 	"github.com/flipped-aurora/gin-vue-admin/server/plugin/email"
+	"github.com/flipped-aurora/gin-vue-admin/server/plugin/flow"
+	"github.com/flipped-aurora/gin-vue-admin/server/plugin/organization"
 	"github.com/flipped-aurora/gin-vue-admin/server/utils/plugin"
 	"github.com/gin-gonic/gin"
 )
@@ -30,5 +32,7 @@ func bizPluginV1(group ...*gin.RouterGroup) {
 		global.GVA_CONFIG.Email.Port,
 		global.GVA_CONFIG.Email.IsSSL,
 	))
+	PluginInit(private, flow.CreateFlowPlug())
+	PluginInit(public, organization.CreateOrganizationPlug())
 	holder(public, private)
 }
