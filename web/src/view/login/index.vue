@@ -1,7 +1,7 @@
 <template>
   <div id="userLayout" class="w-full h-full relative">
     <div
-      class="rounded-lg flex items-center justify-evenly w-full h-full md:w-screen md:h-screen md:bg-[#194bfb] bg-white"
+      class="rounded-lg flex items-center justify-evenly w-full h-full md:w-screen md:h-screen bg-white"
     >
       <div class="md:w-3/5 w-10/12 h-full flex items-center justify-evenly">
         <div
@@ -18,9 +18,6 @@
             <div class="mb-9">
               <p class="text-center text-4xl font-bold">
                 {{ $GIN_VUE_ADMIN.appName }}
-              </p>
-              <p class="text-center text-sm font-normal text-gray-500 mt-2.5">
-                A management platform using Golang and Vue
               </p>
             </div>
             <el-form
@@ -79,25 +76,9 @@
                   >登 录</el-button
                 >
               </el-form-item>
-              <el-form-item class="mb-6">
-                <el-button
-                  class="shadow shadow-active h-11 w-full"
-                  type="primary"
-                  size="large"
-                  @click="checkInit"
-                  >前往初始化</el-button
-                >
-              </el-form-item>
             </el-form>
           </div>
         </div>
-      </div>
-      <div class="hidden md:block w-1/2 h-full float-right bg-[#194bfb]">
-        <img
-          class="h-full"
-          src="@/assets/login_right_banner.jpg"
-          alt="banner"
-        />
       </div>
     </div>
 
@@ -218,21 +199,5 @@
       // 登陆成功
       return true
     })
-  }
-
-  // 跳转初始化
-  const checkInit = async () => {
-    const res = await checkDB()
-    if (res.code === 0) {
-      if (res.data?.needInit) {
-        userStore.NeedInit()
-        await router.push({ name: 'Init' })
-      } else {
-        ElMessage({
-          type: 'info',
-          message: '已配置数据库信息，无法初始化'
-        })
-      }
-    }
   }
 </script>
